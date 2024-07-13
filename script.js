@@ -16,7 +16,7 @@ function formatTime(seconds) {
 async function getSongs(folder) {
     currFolder = folder;
     try {
-        let response = await fetch(`http://127.0.0.1:3000/${folder}/`);
+        let response = await fetch(`arunabh-sen.github.io/spotify-clone/${folder}/`);
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
